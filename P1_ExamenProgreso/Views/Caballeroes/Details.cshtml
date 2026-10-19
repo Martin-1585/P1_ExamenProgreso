@@ -1,0 +1,50 @@
+﻿@model P1_ExamenProgreso.Models.Caballero
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Caballero</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.constelacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.constelacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nivelPoder)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nivelPoder)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.elemento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.elemento)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
